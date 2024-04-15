@@ -1,0 +1,464 @@
+[
+    {
+      "name": "iPhone 13",
+      "price": 799,
+      "featured": true,
+      "rating": 4.9,
+      "company": "Apple"
+    },
+    {
+      "name": "XPS 13",
+      "price": 999,
+      "featured": false,
+      "rating": 4.8,
+      "company": "DELL"
+    },
+    {
+      "name": "Edge 30 Ultra",
+      "price": 799,
+      "featured": true,
+      "rating": 4.7,
+      "company": "MOTOROLA"
+    },
+    {
+      "name": "11 Lite NE 5G",
+      "price": 399,
+      "featured": false,
+      "rating": 4.6,
+      "company": "MI"
+    },
+    {
+      "name": "Galaxy S22 Ultra",
+      "price": 1199,
+      "featured": true,
+      "rating": 4.9,
+      "company": "Samsung"
+    },
+    {
+      "name": "Pixel 6 Pro",
+      "price": 899,
+      "featured": false,
+      "rating": 4.8,
+      "company": "Google"
+    },
+    {
+      "name": "Razer Blade 15",
+      "price": 1999,
+      "featured": true,
+      "rating": 4.9,
+      "company": "Razer"
+    },
+    {
+      "name": "Mac Studio",
+      "price": 1999,
+      "featured": false,
+      "rating": 4.8,
+      "company": "Apple"
+    },
+    {
+      "name": "Surface Laptop 5",
+      "price": 999,
+      "featured": true,
+      "rating": 4.9,
+      "company": "Microsoft"
+    },
+    {
+      "name": "ZenBook 14",
+      "price": 799,
+      "featured": false,
+      "rating": 4.8,
+      "company": "ASUS"
+    },
+    {
+      "name": "IdeaPad 5 Pro",
+      "price": 699,
+      "featured": true,
+      "rating": 4.7,
+      "company": "Lenovo"
+    },
+    {
+      "name": "Chromebook Spin 714",
+      "price": 499,
+      "featured": false,
+      "rating": 4.6,
+      "company": "Acer"
+    },
+    {
+        "name": "MacBook Air M2",
+        "price": 999,
+        "featured": true,
+        "rating": 4.9,
+        "company": "Apple"
+      },
+      {
+        "name": "Inspiron 16 Plus",
+        "price": 1199,
+        "featured": false,
+        "rating": 4.8,
+        "company": "DELL"
+      },
+      {
+        "name": "Moto G71 5G",
+        "price": 299,
+        "featured": true,
+        "rating": 4.7,
+        "company": "MOTOROLA"
+      },
+      {
+        "name": "Redmi Note 11 Pro",
+        "price": 249,
+        "featured": false,
+        "rating": 4.6,
+        "company": "MI"
+      },
+      {
+        "name": "Galaxy A53 5G",
+        "price": 449,
+        "featured": true,
+        "rating": 4.9,
+        "company": "Samsung"
+      },
+      {
+        "name": "Pixel 6a",
+        "price": 449,
+        "featured": false,
+        "rating": 4.8,
+        "company": "Google"
+      },
+      {
+        "name": "Razer Blade 14",
+        "price": 1799,
+        "featured": true,
+        "rating": 4.9,
+        "company": "Razer"
+      },
+      {
+        "name": "Mac mini M1",
+        "price": 699,
+        "featured": false,
+        "rating": 4.8,
+        "company": "Apple"
+      },
+      {
+        "name": "Surface Laptop Go 2",
+        "price": 599,
+        "featured": true,
+        "rating": 4.9,
+        "company": "Microsoft"
+      },
+      {
+        "name": "Swift 5",
+        "price": 899,
+        "featured": false,
+        "rating": 4.8,
+        "company": "ASUS"
+      },
+      {
+        "name": "ThinkPad X1 Carbon Gen 10",
+        "price": 1499,
+        "featured": true,
+        "rating": 4.9,
+        "company": "Lenovo"
+      },
+      {
+        "name": "Aspire 5",
+        "price": 549,
+        "featured": false,
+        "rating": 4.8,
+        "company": "Acer"
+      },
+      {
+        "name": "iPad Air M1",
+        "price": 599,
+        "featured": true,
+        "rating": 4.9,
+        "company": "Apple"
+      },
+      {
+        "name": "Latitude 9430 2-in-1",
+        "price": 1999,
+        "featured": false,
+        "rating": 4.8,
+        "company": "DELL"
+      },
+      {
+        "name": "Moto G Stylus 5G (2022)",
+        "price": 299,
+        "featured": true,
+        "rating": 4.7,
+        "company": "MOTOROLA"
+      },
+      {
+        "name": "Redmi 11 Prime",
+        "price": 149,
+        "featured": false,
+        "rating": 4.6,
+        "company": "MI"
+      },
+      {
+        "name": "Galaxy A33 5G",
+        "price": 349,
+        "featured": true,
+        "rating": 4.9,
+        "company": "Samsung"
+      },
+      {
+        "name": "Pixel 4a 5G",
+        "price": 499,
+        "featured": false,
+        "rating": 4.8,
+        "company": "Google"
+      },
+      {
+        "name": "Razer Book 13",
+        "price": 1599,
+        "featured": true,
+        "rating": 4.9,
+        "company": "Razer"
+      },
+      {
+        "name": "iMac 24-inch M1",
+        "price": 1299,
+        "featured": false,
+        "rating": 4.8,
+        "company": "Apple"
+      },
+      {
+        "name": "Surface Pro 8 with Intel Evo",
+        "price": 1799,
+        "featured": true,
+        "rating": 4.9,
+        "company": "Microsoft"
+      },
+      {
+        "name": "Vivobook 15",
+        "price": 699,
+        "featured": false,
+        "rating": 4.8,
+        "company": "ASUS"
+      },
+      {
+        "name": "ThinkPad T14 Gen 5",
+        "price": 1199,
+        "featured": true,
+        "rating": 4.9,
+        "company": "Lenovo"
+      },
+      {
+        "name": "Swift 3",
+        "price": 599,
+        "featured": false,
+        "rating": 4.8,
+        "company": "Acer"
+      },
+      {
+        "name": "iPhone 14 Pro",
+        "price": 999,
+        "featured": true,
+        "rating": 4.9,
+        "company": "Apple"
+      },
+      {
+        "name": "XPS 13 Plus",
+        "price": 1299,
+        "featured": false,
+        "rating": 4.8,
+        "company": "DELL"
+      },
+      {
+        "name": "Edge 30 Ultra",
+        "price": 799,
+        "featured": true,
+        "rating": 4.7,
+        "company": "MOTOROLA"
+      },
+      {
+        "name": "12 Lite NE 5G",
+        "price": 399,
+        "featured": false,
+        "rating": 4.6,
+        "company": "MI"
+      },
+      {
+        "name": "Galaxy S23 Ultra",
+        "price": 1199,
+        "featured": true,
+        "rating": 4.9,
+        "company": "Samsung"
+      },
+      {
+        "name": "Pixel 7 Pro",
+        "price": 899,
+        "featured": false,
+        "rating": 4.8,
+        "company": "Google"
+      },
+      {
+        "name": "Razer Blade 15 Advanced",
+        "price": 1999,
+        "featured": true,
+        "rating": 4.9,
+        "company": "Razer"
+      },
+      {
+        "name": "Mac Studio Max",
+        "price": 1999,
+        "featured": false,
+        "rating": 4.8,
+        "company": "Apple"
+      },
+      {
+        "name": "Surface Laptop Go 3",
+        "price": 599,
+        "featured": true,
+        "rating": 4.9,
+        "company": "Microsoft"
+      },
+      {
+        "name": "ZenBook 14X OLED",
+        "price": 899,
+        "featured": false,
+        "rating": 4.8,
+        "company": "ASUS"
+      },
+      {
+        "name": "ThinkPad X1 Carbon Gen 11",
+        "price": 1499,
+        "featured": true,
+        "rating": 4.9,
+        "company": "Lenovo"
+      },
+      {
+        "name": "Swift 3 OLED",
+        "price": 599,
+        "featured": false,
+        "rating": 4.8,
+        "company": "Acer"
+      },
+      {
+        "name": "IdeaPad Slim 7i Pro",
+        "price": 799,
+        "featured": true,
+        "rating": 4.9,
+        "company": "Lenovo"
+      },
+      {
+        "name": "Aspire 7",
+        "price": 699,
+        "featured": false,
+        "rating": 4.8,
+        "company": "Acer"
+      },
+      {
+        "name": "Galaxy Tab S8 Ultra",
+        "price": 799,
+        "featured": true,
+        "rating": 4.9,
+        "company": "Samsung"
+      },
+      {
+        "name": "iPad Pro 12.9-inch M2",
+        "price": 999,
+        "featured": false,
+        "rating": 4.8,
+        "company": "Apple"
+      },
+      {
+        "name": "Surface Pro 9",
+        "price": 1999,
+        "featured": true,
+        "rating": 4.9,
+        "company": "Microsoft"
+      },
+      {
+        "name": "ZenBook Flip 14 OLED",
+        "price": 799,
+        "featured": false,
+        "rating": 4.8,
+        "company": "ASUS"
+      },
+      {
+        "name": "IdeaPad Yoga 9i",
+        "price": 1199,
+        "featured": true,
+        "rating": 4.9,
+        "company": "Lenovo"
+      },
+      {
+        "name": "Chromebook Spin 714 (2023)",
+        "price": 499,
+        "featured": false,
+        "rating": 4.8,
+        "company": "Acer"
+      },
+      {
+        "name": "Galaxy Tab S8+",
+        "price": 699,
+        "featured": true,
+        "rating": 4.9,
+        "company": "Samsung"
+      },
+      {
+        "name": "iPad Air M2",
+        "price": 599,
+        "featured": false,
+        "rating": 4.8,
+        "company": "Apple"
+      },
+      {
+        "name": "Surface Pro 8 with Intel Evo Platform",
+        "price": 1799,
+        "featured": true,
+        "rating": 4.9,
+        "company": "Microsoft"
+      },
+      {
+        "name": "Vivobook Pro 15 OLED",
+        "price": 799,
+        "featured": false,
+        "rating": 4.8,
+        "company": "ASUS"
+      },
+      {
+        "name": "ThinkPad X13 Gen 4",
+        "price": 999,
+        "featured": true,
+        "rating": 4.9,
+        "company": "Lenovo"
+      },
+      {
+        "name": "Swift 5 Pro",
+        "price": 699,
+        "featured": false,
+        "rating": 4.8,
+        "company": "Acer"
+      },
+      {
+        "name": "Galaxy A73 5G",
+        "price": 449,
+        "featured": true,
+        "rating": 4.9,
+        "company": "Samsung"
+      },
+      {
+        "name": "iPhone SE 3rd Gen",
+        "price": 429,
+        "featured": false,
+        "rating": 4.8,
+        "company": "Apple"
+      },
+      {
+        "name": "Surface Laptop Go 2 with Intel Evo Platform",
+        "price": 599,
+        "featured": true,
+        "rating": 4.9,
+        "company": "Microsoft"
+      },
+      {
+        "name": "ZenBook 13 OLED",
+        "price": 699,
+        "featured": false,
+        "rating": 4.8,
+        "company": "ASUS"
+      }
+]
