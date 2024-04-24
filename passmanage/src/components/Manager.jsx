@@ -3,6 +3,8 @@ import { useEffect, useRef, useState } from "react"
 const Manager = () => {
 
     const ref = useRef();
+    const passwordRef = useRef();
+
     const [form, setForm] = useState({
         site: "",
         username: "",
@@ -21,8 +23,10 @@ const Manager = () => {
     const showPassword = () => {
         if (ref.current.src.includes('icons/eyecross.svg')) {
             ref.current.src = 'icons/eye.svg'
+            passwordRef.current.type = 'password'
         } else {
             ref.current.src = 'icons/eyecross.svg'
+            passwordRef.current.type = 'text'
         }
     }
 
@@ -56,8 +60,8 @@ const Manager = () => {
                         <input onChange={handleOnChange} value={form.username} className='rounded-full border border-green-500 w-full p-4 py-1'
                             placeholder='Enter Username' type="text" name="username" id="" />
                         <div className="relative">
-                            <input onChange={handleOnChange} value={form.password} className='rounded-full border border-green-500 w-full p-4 py-1'
-                                placeholder='Enter Password' type="text" name="password" id="" />
+                            <input ref={passwordRef} onChange={handleOnChange} value={form.password} className='rounded-full border border-green-500 w-full p-4 py-1'
+                                placeholder='Enter Password' type="password" name="password" id="" />
                             <span className="absolute right-[3px] top-[4px] cursor-pointer" onClick={showPassword}>
                                 <img ref={ref} className="p-1 pt-1" width={26} src="icons/eye.svg" alt="eye" />
                             </span>
