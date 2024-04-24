@@ -8,13 +8,17 @@ const Navbar = () => {
                     Vish
                     <span className='text-green-500'>OP/ &gt;</span>
                 </div>
-                <ul>
+                {/* <ul>
                     <li className='flex gap-4'>
                         <a className='hover:font-bold' href="/">Home</a>
                         <a className='hover:font-bold' href="#">About</a>
                         <a className='hover:font-bold' href="#">Contact</a>
                     </li>
-                </ul>
+                </ul> */}
+                <button className="text-black bg-green-500 my-5 rounded-full flex justify-between items-center">
+                    <img className="p-1 w-10" src="icons/github.svg" alt="github logo" />
+                    <span className="font-bold px-2">Github</span>     
+                </button>
             </div>
         </nav>
     )
