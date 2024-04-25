@@ -8,9 +8,9 @@ This repository contains projects built using the MERN stack. MERN stands for Mo
 
 The following projects are included in this repository:
 
-1. Project 1
-2. Project 2
-3. Project 3
+1. STACKOVERFLOW CLONE
+2. restAPI
+3. PasswordManager
    ...and so on.
 
 ## Installation and Setup
