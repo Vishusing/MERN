@@ -1,4 +1,7 @@
 import { useEffect, useRef, useState } from "react"
+import { ToastContainer, toast } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
 
 const Manager = () => {
 
@@ -14,7 +17,6 @@ const Manager = () => {
 
     useEffect(() => {
         let passwords = localStorage.getItem("password")
-        console.log(passwords)
         if (passwords) {
             setPasswordArray(JSON.parse(passwords))
         }
@@ -40,9 +42,37 @@ const Manager = () => {
         console.log([...passwordArray, form])
     }
 
+    const copyText = (text) => {
+        navigator.clipboard.writeText(text)
+        toast('Copied to Clipboard', {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: "Bounce",
+        });
+    }
+
 
     return (
         <>
+            <ToastContainer
+                position="top-right"
+                autoClose={3000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+                transition="Bounce"
+            />
             {/* https://bg.ibelick.com/ */}
             <div className="absolute inset-0 -z-10 h-full w-full bg-green-50
             bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] 
@@ -55,13 +85,13 @@ const Manager = () => {
                 <p className='text-green-900 text-lg text-center '>Your Password Manager</p>
                 <div className="flex flex-col p-4 text-black gap-8 items-center">
                     <input onChange={handleOnChange} value={form.site} className='rounded-full border border-green-500 w-full p-4 py-1'
-                        placeholder='Enter Website Url' type="text" name="site" id="" />
+                        placeholder='Enter Website Url' type="text" name="site" id="1" />
                     <div className="flex w-full justify-between gap-8">
                         <input onChange={handleOnChange} value={form.username} className='rounded-full border border-green-500 w-full p-4 py-1'
-                            placeholder='Enter Username' type="text" name="username" id="" />
+                            placeholder='Enter Username' type="text" name="username" id="2" />
                         <div className="relative">
                             <input ref={passwordRef} onChange={handleOnChange} value={form.password} className='rounded-full border border-green-500 w-full p-4 py-1'
-                                placeholder='Enter Password' type="password" name="password" id="" />
+                                placeholder='Enter Password' type="password" name="password" id="3" />
                             <span className="absolute right-[3px] top-[4px] cursor-pointer" onClick={showPassword}>
                                 <img ref={ref} className="p-1 pt-1" width={26} src="icons/eye.svg" alt="eye" />
                             </span>
@@ -92,9 +122,30 @@ const Manager = () => {
                             <tbody className="bg-green-100">
                                 {passwordArray.map((item, index) => (
                                     <tr key={index}>
-                                        <td className="py-2 border border-white text-center w-32"><a href={item.site} target="_blank">{item.site}</a></td>
-                                        <td className="py-2 border border-white text-center w-32">{item.username}</td>
-                                        <td className="py-2 border border-white text-center w-32">{item.password}</td>
+                                        <td className="py-2 borderborder-white text-center">
+                                            <div className="flex items-center justify-center">
+                                                <a href={item.site} target="_blank">{item.site}</a>
+                                                <div className="size-7 cursor-pointer ml-2 mt-2">
+                                                    <img src="icons/copy.svg" width={20} alt="copy" onClick={() => { copyText(item.site) }} />
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td className=" py-2 border border-white text-center">
+                                            <div className="flex items-center justify-center">
+                                                {item.username}
+                                                <div className="size-7 cursor-pointer ml-2 mt-2">
+                                                    <img src="icons/copy.svg" width={20} alt="copy" onClick={() => { copyText(item.username) }} />
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td className="py-2 border border-white text-center">
+                                            <div className="flex items-center justify-center">
+                                                {item.password}
+                                                <div className="size-7 cursor-pointer ml-2 mt-2">
+                                                    <img src="icons/copy.svg" width={20} alt="copy" onClick={() => { copyText(item.password) }} />
+                                                </div>
+                                            </div>
+                                        </td>
                                     </tr>
                                 ))}
                             </tbody>
