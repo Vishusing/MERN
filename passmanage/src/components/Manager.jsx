@@ -1,15 +1,19 @@
 import { useEffect, useRef, useState } from "react"
 
+import { v4 as uuidv4 } from 'uuid';
+
 const Manager = () => {
+
+   let initialFormState = {
+        site: "",
+        username: "",
+        password: "",
+    }
 
     const ref = useRef();
     const passwordRef = useRef();
 
-    const [form, setForm] = useState({
-        site: "",
-        username: "",
-        password: "",
-    });
+    const [form, setForm] = useState(initialFormState);
     const [passwordArray, setPasswordArray] = useState([]);
 
     useEffect(() => {
@@ -34,9 +38,20 @@ const Manager = () => {
     }
 
     const savePassword = () => {
-        setPasswordArray([...passwordArray, form])
-        localStorage.setItem("password", JSON.stringify([...passwordArray, form]))
-        console.log([...passwordArray, form])
+        setPasswordArray([...passwordArray, { ...form, id: uuidv4() }])
+        localStorage.setItem("password", JSON.stringify([...passwordArray, { ...form, id: uuidv4() }]))
+        console.log([...passwordArray, { ...form, id: uuidv4() }])
+        setForm(initialFormState)
+    }
+
+    const editPassword = (id) => {
+        console.log('Editing password with id', id)
+    }
+
+    const deletePassword = (id) => {
+        console.log('Deleting password with id', id)
+        setPasswordArray(passwordArray.filter((item) => item.id !== id))
+        localStorage.setItem("password", JSON.stringify(passwordArray.filter((item) => item.id !== id)))
     }
 
     const copyText = (text) => {
@@ -121,7 +136,7 @@ const Manager = () => {
                             src="https://cdn.lordicon.com/jgnvfzqg.json"
                             trigger="hover">
                         </lord-icon>
-                        Add Password
+                        Save Password
                     </button>
                 </div>
                 <div className="passwords">
@@ -183,9 +198,10 @@ const Manager = () => {
                                                 </div>
                                             </div>
                                         </td>
-                                        <td className="py-2 border gap-3 flex justify-center border-white text-center">
+                                        <td className="pt-3 gap-4 flex justify-center">
                                             <span className="cursor-pointer">
                                                 <img
+                                                    onClick={() => { editPassword(item.id) }}
                                                     src="icons/edit.svg"
                                                     width={20}
                                                     alt="edit"
@@ -193,6 +209,7 @@ const Manager = () => {
                                             </span>
                                             <span className="cursor-pointer">
                                                 <img
+                                                    onClick={() => { deletePassword(item.id) }}
                                                     src="icons/delete.svg"
                                                     width={20}
                                                     alt="edit"
