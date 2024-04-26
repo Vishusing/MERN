@@ -1,7 +1,4 @@
 import { useEffect, useRef, useState } from "react"
-import { ToastContainer, toast } from 'react-toastify';
-
-import 'react-toastify/dist/ReactToastify.css';
 
 const Manager = () => {
 
@@ -44,35 +41,12 @@ const Manager = () => {
 
     const copyText = (text) => {
         navigator.clipboard.writeText(text)
-        toast('Copied to Clipboard', {
-            position: "top-right",
-            autoClose: 3000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "light",
-            transition: "Bounce",
-        });
+        alert('Copied to clipboard')
     }
 
 
     return (
         <>
-            <ToastContainer
-                position="top-right"
-                autoClose={3000}
-                hideProgressBar={false}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                pauseOnFocusLoss
-                draggable
-                pauseOnHover
-                theme="light"
-                transition="Bounce"
-            />
             {/* https://bg.ibelick.com/ */}
             <div className="absolute inset-0 -z-10 h-full w-full bg-green-50
             bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] 
