@@ -71,7 +71,7 @@ const Manager = () => {
             bg-[size:14px_24px]"><div className="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full
              bg-fuchsia-400 opacity-20 blur-[100px]"></div></div>
 
-            <div className="p-2 p-3 md:mycontainer min-h-[88vh]">
+            <div className="p-2 sm:w-[100%] md:mycontainer min-h-[88vh]">
                 <h1 className='text-4xl font-bold text-center'>
                     <span className='text-green-500'>
                         &lt;
@@ -94,7 +94,7 @@ const Manager = () => {
                         name="site"
                         id="site"
                     />
-                    <div className="flex flex-col md:flex-row w-full justify-between gap-8">
+                    <div className="flex flex-col lg:flex-row w-full justify-between gap-8">
                         <input
                             onChange={handleOnChange}
                             value={form.username}
@@ -143,12 +143,12 @@ const Manager = () => {
                     </button>
                 </div>
                 <div className="passwords">
-                    <h2 className="font-bold text-xl py-4">
+                    <h2 className="font-bold text-xl py-4 text-center">
                         Your Passwords
                     </h2>
                     {passwordArray.length === 0 && <div>No Passwords to show</div>}
                     {passwordArray.length !== 0 &&
-                        <table className="table-auto w-full rounded-md overflow-hidden mb-10">
+                        <table className="table-auto w-full md:w-full rounded-md overflow-hidden mb-10">
                             <thead className="bg-green-800 text-white">
                                 <tr>
                                     <th className="py-2">Site</th>
