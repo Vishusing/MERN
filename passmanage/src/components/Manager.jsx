@@ -55,8 +55,8 @@ const Manager = () => {
     }
 
     const deletePassword = (id) => {
-        let confirm = confirm("Do you really want to delete this password??")
-        if (confirm) {
+        let c = confirm("Do you really want to delete this password??")
+        if (c) {
             console.log('Deleting password with id', id)
             setPasswordArray(passwordArray.filter((item) => item.id !== id))
             localStorage.setItem("password", JSON.stringify(passwordArray.filter((item) => item.id !== id)))
