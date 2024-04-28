@@ -190,7 +190,7 @@ const Manager = () => {
                                         </td>
                                         <td className="py-2 border border-white text-center">
                                             <div className="flex items-center justify-center">
-                                                {item.password}
+                                                {"*".repeat(item.password)}
                                                 <div className="size-7 cursor-pointer ml-2 mt-2">
                                                     <img
                                                         src="icons/copy.svg"
