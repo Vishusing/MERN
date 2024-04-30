@@ -1,14 +1,6 @@
-import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 
-import Home from '../src/Pages/Home/Home'
-import Auth from './Pages/Auth/Auth'
-import Questions from './Pages/Questions/Questions'
-import AskQuestion from './Pages/AskQuestion/AskQuestion'
-import DisplayQuestion from './Pages/Questions/DisplayQuestion'
-import Tags from './Pages/Tags/Tags'
-import Users from './Pages/Users/Users'
-import UserProfile from './Pages/UserProfile/UserProfile'
+import { Home, Auth, Questions, AskQuestion, Tags, Users, UserProfile, DisplayQuestion } from './Pages'
 
 const AllRoutes = ({ slideIn, handleSlideIn }) => {
   return (

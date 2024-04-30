@@ -1,7 +1,6 @@
-import React from 'react'
 import './Tags.css'
 
-const TagsList = ({tag}) => {
+const TagsList = ({ tag }) => {
   return (
     <div className="tag">
       <h5>{tag.tagName}</h5>

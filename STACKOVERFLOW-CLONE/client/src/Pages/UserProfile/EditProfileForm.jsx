@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { updateProfile } from "../../actions/users";
 
@@ -51,7 +51,11 @@ const EditProfileForm = ({ currentUser, setSwitch }) => {
           />
         </label>
         <br />
-        <input type="submit" value="Save profile" className="user-submit-btn" />
+        <input
+          type="submit"
+          value="Save profile"
+          className="user-submit-btn"
+        />
         <button
           type="button"
           className="user-cancel-btn"

@@ -1,7 +1,9 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
+
 import icon from '../../assets/icon.png'
+
 import './Auth.css'
 import AboutAuth from './AboutAuth'
 import { signup, login } from '../../actions/auth'
@@ -44,13 +46,23 @@ const Auth = () => {
             isSignup && (
               <label htmlFor='name'>
                 <h4> Display Name </h4>
-                <input type="text" id="name" name="name" onChange={(e) => { setName(e.target.value) }} />
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  onChange={(e) => { setName(e.target.value) }}
+                />
               </label>
             )
           }
           <label htmlFor="email">
             <h4>Email</h4>
-            <input type="email" name="email" id="email" onChange={(e) => { setEmail(e.target.value) }} />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              onChange={(e) => { setEmail(e.target.value) }}
+            />
           </label>
           <label htmlFor="password">
             <div style={{ display: "flex", justifyContent: "space-between" }}>
@@ -74,7 +86,12 @@ const Auth = () => {
               </label>
             )
           }
-          <button type='submit' className='auth-btn'>{isSignup ? 'Sign up' : 'Log in'}</button>
+          <button
+            type='submit'
+            className='auth-btn'
+          >
+            {isSignup ? 'Sign up' : 'Log in'}
+          </button>
           {
             isSignup && (
               <p style={{ color: "#666767", fontSize: "13px" }}>
@@ -88,7 +105,12 @@ const Auth = () => {
         </form>
         <p>
           {isSignup ? 'already have an account?' : "Don't have an account?"}
-          <button type='button' className='handle-switch-btn' onClick={handleSwitch}>{isSignup ? "Log in" : "sign up"}</button>
+          <button
+            type='button'
+            className='handle-switch-btn'
+            onClick={handleSwitch}>
+            {isSignup ? "Log in" : "sign up"}
+          </button>
         </p>
       </div>
     </section>
