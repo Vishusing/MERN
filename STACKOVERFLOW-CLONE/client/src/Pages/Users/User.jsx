@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Users.css";
 
-
 const User = ({ user }) => {
   return (
     <Link 

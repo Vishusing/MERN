@@ -1,5 +1,4 @@
-import React from 'react'
-import LeftSidebar from '../../components/LeftSidebar/LeftSidebar'
+import { LeftSidebar } from '../../components';
 import TagsList from './TagsList'
 import './Tags.css'
 

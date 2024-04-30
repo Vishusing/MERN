@@ -1,4 +1,3 @@
-import React from 'react'
 import moment from 'moment'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link, useParams } from 'react-router-dom'

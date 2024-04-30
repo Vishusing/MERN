@@ -1,4 +1,3 @@
-import React from 'react'
 
 const Avatar = ({ children, backgroundColor, px, py, color, borderRadius, fontSize, cursor }) => {
   const style = {

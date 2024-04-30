@@ -1,9 +1,5 @@
-import React from 'react'
-
 import '../../App.css'
-import LeftSidebar from '../../components/LeftSidebar/LeftSidebar'
-import RigtSidebar from '../../components/RightSidebar/RightSidebar'
-import HomeMainbar from '../../components/HomeMainbar/HomeMainbar'
+import { LeftSidebar, RigtSidebar, HomeMainbar } from '../../components'
 
 const Questions = () => {
   return (

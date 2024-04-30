@@ -1,5 +1,5 @@
 import "./Users.css";
-import LeftSidebar from "../../components/LeftSidebar/LeftSidebar";
+import { LeftSidebar } from "../../components";
 import UsersList from "./UsersList";
 
 const Users = ({ slideIn, handleSlideIn }) => {

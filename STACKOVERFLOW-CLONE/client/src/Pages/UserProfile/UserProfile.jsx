@@ -5,8 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBirthdayCake, faPen } from "@fortawesome/free-solid-svg-icons";
 import moment from "moment";
 
-import LeftSidebar from "../../components/LeftSidebar/LeftSidebar";
-import Avatar from "../../components/Avatar/Avatar";
+import {LeftSidebar, Avatar} from "../../components"
 import EditProfileForm from "./EditProfileForm";
 import ProfileBio from "./ProfileBio";
 import "./UsersProfile.css";
