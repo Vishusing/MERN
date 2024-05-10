@@ -3,8 +3,7 @@ import { useEffect, useRef, useState } from "react"
 import { v4 as uuidv4 } from 'uuid';
 
 const Manager = () => {
-
-
+    
     const ref = useRef();
     const passwordRef = useRef();
     const [form, setForm] = useState({
