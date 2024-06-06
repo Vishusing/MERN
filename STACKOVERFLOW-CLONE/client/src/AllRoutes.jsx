@@ -12,11 +12,11 @@ const AllRoutes = ({ slideIn, handleSlideIn }) => {
       <Route exact path='/Questions/:id' element={<DisplayQuestion />} />
       <Route exact path='/Tags' element={<Tags />} />
       <Route
-       exact path="/Users"
+        exact path="/Users"
         element={<Users slideIn={slideIn} handleSlideIn={handleSlideIn} />}
       />
       <Route
-       exact path="/Users/:id"
+        exact path="/Users/:id"
         element={
           <UserProfile slideIn={slideIn} handleSlideIn={handleSlideIn} />
         }
