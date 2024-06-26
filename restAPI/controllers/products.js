@@ -1,7 +1,7 @@
-const Product = require("../models/product")
+import Product from "../models/product.js";
 
 
-const getAllProducts = async (req, res) => {
+export const getAllProducts = async (req, res) => {
 
     const { company, name, featured, sort, select } = req.query;
     const queryObject = {};
@@ -41,8 +41,6 @@ const getAllProducts = async (req, res) => {
     res.status(200).json({ Products, nbHits: Products.length });
 };
 
-const getAllProductsTesting = async (req, res) => {
+export const getAllProductsTesting = async (req, res) => {
     res.status(200).json({ "msg": "I am getAllProductsTesting" });
 };
-
-module.exports = { getAllProducts, getAllProductsTesting };
